@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="music-player.css">
+    <script src="https://kit.fontawesome.com/ba0f409379.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>                
+                </div>
+            </nav>
+            <img src="images/468-thumbnail.png" class="song-img">
+            <h1>Song Name</h1>
+            <p>Narendra Modi ft Amit Shah</p>
+            <audio  id="song"><source src="images/Yes Or No - DJ Flow (DjPunjab.Com).mp3" type="audio/mp3"></audio>
+            <input type="range" value="0" id="progress">
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div><i class="fa-solid fa-play" id="ctrlIcon" onclick="play_pause()"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+    </div>
+    <script src="music-player.js"></script>
+</body>
+</html>
